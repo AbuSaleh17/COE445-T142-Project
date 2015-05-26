@@ -5,8 +5,8 @@ This the source code for our Course Project. The project implemnted in RaspBerry
 Team Member:
 Mahdi Ali Al Mayuf 200962830,
 Hassan Abdulmunem Al-Shabaan 200968350
-
 Instructor: Dr. Yahya Esmail Osais
+
 -------------------------------------------------------------------------------------------------------------------------
 Guideline:
 After connecting all wires to RaspBerry pi pins:
@@ -26,6 +26,8 @@ If the mongodb not running try this command "sudo /etc/init.d/mongod start".
 Run init.js to write temp some date in mongodb to test the mongodb. command "sudo node init.js".
 
 Now all settings are ready. You can run the program (Prayer.js) now. command "sudo node Prayer.js".
+
+There are photos in photos file, They may help you.
 
 If you have any Questions:
 Email: s200962830@kfupm.edu.sa
