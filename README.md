@@ -9,7 +9,7 @@ Hassan Abdulmunem Al-Shabaan 200968350.
 Instructor: Dr. Yahya Esmail Osais
 
 -------------------------------------------------------------------------------------------------------------------------
-Guideline:
+Guidelines:
 
 After connecting all wires to RaspBerry pi pins:
 Connect ethernet cable to it and also Connect the power cable.
