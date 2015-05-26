@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+
+<head>
+   <title>Prayer Home Page</title>
+</head>
+
+<body>
+
+<h1>Welcome to My Prayer app</h1>
+<hr>
+<p><a href="/history">History</a></p>
+<h2>Please Choose a prayer</h2>
+<form>
+
+<select Id="Prayers" name="Prayers">
+  <option id="1" value="Fajar">Fajar</option>
+  <option id="2" value="Duhar">Duhar</option>
+  <option id="3" value="Asar">Asar</option>
+  <option id="4" value="Mughrab">Mughrab</option>
+  <option id="5" value="Asha">Asha</option>
+</select>
+</form>	
+<button id="start" type="button" onclick="StartFunction()">Start</button>
+<button id="stop" type="button"disabled onclick="StopFunction()">Stop</button>
+
+
+<script src="socket.io-1.2.0.js"></script>
+<script src="jquery-1.11.1.js"></script>
+<script>
+function StartFunction() {
+document.getElementById("stop").disabled = false;
+document.getElementById("start").disabled = true;
+document.getElementById("moves").innerHTML = "";
+var socket = io(window.location.href);
+  socket.emit("start", document.getElementById("Prayers").options[document.getElementById("Prayers").selectedIndex].id);
+}
+function StopFunction() {
+document.getElementById("start").disabled = false;
+document.getElementById("stop").disabled = true;
+var socket = io(window.location.href);
+socket.emit("stop", "Stop");
+}
+
+</script>
+
+<h3>Your Moves:</h3>
+
+<ul id="moves"></ul>
+
+<script>
+ var socket = io(window.location.href);
+  socket.on('moves', function(msg){
+  $('#moves').append($('<li>').text(msg));
+  });
+</script>
+
+</body>
+</html>
