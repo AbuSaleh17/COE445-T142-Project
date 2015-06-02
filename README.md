@@ -14,7 +14,7 @@ Guidelines:
 After connecting all wires to RaspBerry pi pins:
 Connect ethernet cable to it and also Connect the power cable.
 
-The normal way to connect to RaspBerry pi is by connect the av cable or HDMI cable to monitor and with using USB mouse and keyboard. But you need to connect to network to access the web application form other computer( You can access the web application from RaspBerry pi but if you access it from outside the RaspBerry pi, it will be more faster).
+The normal way to connect to RaspBerry pi is by connect the av cable or HDMI cable to monitor and with using USB mouse and keyboard. But you need to connect to network to access the web application form other computer( You can access the web application from RaspBerry pi but if you access it from outside the RaspBerry pi, it will be much faster).
 
 Now you have to get the ip for RaspBerry pi. There is many ways to get it. These are two ways to get the ip.
 First way: get it from router or modem.
